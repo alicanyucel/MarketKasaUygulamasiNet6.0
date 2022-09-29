@@ -38,6 +38,7 @@
             this.btnKrediKarti = new System.Windows.Forms.Button();
             this.btnNakit = new System.Windows.Forms.Button();
             this.dtg1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtg1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,8 +59,10 @@
             this.btnLenovoZ580.Name = "btnLenovoZ580";
             this.btnLenovoZ580.Size = new System.Drawing.Size(90, 49);
             this.btnLenovoZ580.TabIndex = 1;
+            this.btnLenovoZ580.TabStop = false;
             this.btnLenovoZ580.Text = "Lenovo Z580";
             this.btnLenovoZ580.UseVisualStyleBackColor = true;
+            this.btnLenovoZ580.Click += new System.EventHandler(this.btnLenovoZ580_Click);
             // 
             // btnIphoneX
             // 
@@ -67,8 +70,10 @@
             this.btnIphoneX.Name = "btnIphoneX";
             this.btnIphoneX.Size = new System.Drawing.Size(90, 49);
             this.btnIphoneX.TabIndex = 2;
+            this.btnIphoneX.TabStop = false;
             this.btnIphoneX.Text = "İphone X";
             this.btnIphoneX.UseVisualStyleBackColor = true;
+            this.btnIphoneX.Click += new System.EventHandler(this.btnIphoneX_Click);
             // 
             // btnLgG2
             // 
@@ -76,8 +81,10 @@
             this.btnLgG2.Name = "btnLgG2";
             this.btnLgG2.Size = new System.Drawing.Size(90, 49);
             this.btnLgG2.TabIndex = 3;
+            this.btnLgG2.TabStop = false;
             this.btnLgG2.Text = "Lg G2";
             this.btnLgG2.UseVisualStyleBackColor = true;
+            this.btnLgG2.Click += new System.EventHandler(this.btnLgG2_Click);
             // 
             // btnSamsungF20
             // 
@@ -85,8 +92,10 @@
             this.btnSamsungF20.Name = "btnSamsungF20";
             this.btnSamsungF20.Size = new System.Drawing.Size(90, 49);
             this.btnSamsungF20.TabIndex = 4;
+            this.btnSamsungF20.TabStop = false;
             this.btnSamsungF20.Text = "Samsung F20";
             this.btnSamsungF20.UseVisualStyleBackColor = true;
+            this.btnSamsungF20.Click += new System.EventHandler(this.btnSamsungF20_Click);
             // 
             // btnMackbookPro
             // 
@@ -94,8 +103,10 @@
             this.btnMackbookPro.Name = "btnMackbookPro";
             this.btnMackbookPro.Size = new System.Drawing.Size(90, 49);
             this.btnMackbookPro.TabIndex = 5;
+            this.btnMackbookPro.TabStop = false;
             this.btnMackbookPro.Text = "Macbook Pro";
             this.btnMackbookPro.UseVisualStyleBackColor = true;
+            this.btnMackbookPro.Click += new System.EventHandler(this.btnMackbookPro_Click);
             // 
             // btnOppoReno
             // 
@@ -103,8 +114,10 @@
             this.btnOppoReno.Name = "btnOppoReno";
             this.btnOppoReno.Size = new System.Drawing.Size(90, 49);
             this.btnOppoReno.TabIndex = 6;
+            this.btnOppoReno.TabStop = false;
             this.btnOppoReno.Text = "Oppo Reno";
             this.btnOppoReno.UseVisualStyleBackColor = true;
+            this.btnOppoReno.Click += new System.EventHandler(this.btnOppoReno_Click);
             // 
             // btnKrediKarti
             // 
@@ -112,6 +125,7 @@
             this.btnKrediKarti.Name = "btnKrediKarti";
             this.btnKrediKarti.Size = new System.Drawing.Size(90, 49);
             this.btnKrediKarti.TabIndex = 7;
+            this.btnKrediKarti.TabStop = false;
             this.btnKrediKarti.Text = "Kredi Kartı";
             this.btnKrediKarti.UseVisualStyleBackColor = true;
             // 
@@ -121,6 +135,7 @@
             this.btnNakit.Name = "btnNakit";
             this.btnNakit.Size = new System.Drawing.Size(90, 49);
             this.btnNakit.TabIndex = 8;
+            this.btnNakit.TabStop = false;
             this.btnNakit.Text = "Nakit";
             this.btnNakit.UseVisualStyleBackColor = true;
             // 
@@ -132,12 +147,25 @@
             this.dtg1.RowTemplate.Height = 25;
             this.dtg1.Size = new System.Drawing.Size(299, 341);
             this.dtg1.TabIndex = 9;
+            this.dtg1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(341, 393);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 49);
+            this.button1.TabIndex = 10;
+            this.button1.TabStop = false;
+            this.button1.Text = "Formu Kapat";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 482);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dtg1);
             this.Controls.Add(this.btnNakit);
             this.Controls.Add(this.btnKrediKarti);
@@ -150,6 +178,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Market Kasa Uygulaması";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtg1)).EndInit();
             this.ResumeLayout(false);
 
@@ -167,5 +196,6 @@
         private Button btnKrediKarti;
         private Button btnNakit;
         private DataGridView dtg1;
+        private Button button1;
     }
 }
